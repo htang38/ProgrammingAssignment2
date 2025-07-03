@@ -12,6 +12,11 @@ makeCacheMatrix <- function(x = matrix()) {
   get <- function() {x} # get the matrix
   setinverse <- function(solve) {i <<- solve} # set the inverse
   getinverse <- function() {i} # get the inverse
+  
+  list(set = set, 
+       get = get, 
+       setinverse = setinverse, 
+       getinverse = getinverse)
 }
 
 
